@@ -1,0 +1,59 @@
+
+VIDEO: https://www.youtube.com/watch?v=oqHNsx8PtcU
+
+ARQUIVO: https://goo.gl/u4X2Px (google drive)
+
+
+#####################################################################################
+Server API key | Chave de API | Chave do servidor | Auth Key | API Key:(pega na chave servidor no developers console)
+
+AIzaSyBybmXwngldSfpjrIOa-0n82xxxxxxxxxx 
+
+#####################################################################################
+Sender ID | Número do projeto no developers console:(pega logo no topo quando clica no projeto)
+
+653231888888 
+
+#####################################################################################
+ATENÇÃO!!!!! O MAIS IMPORTANTE E O PULO DO GATO ESTÁ LOGO ABAIXO!
+#####################################################################################
+--->> Device token | Device key | chave do usuário <--- (crie uma rotina ou copie do aplicativo "push ok" quando iniciar)
+
+APA91bFrH8a9sN-bTqJUN0-9xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-iAgIZtagnvdz4U6A7-qmIUF8pIbvvWxq_3NhV5v8iJiA7G2RqJIqG-UMrwIkRJ1ByrHJbhl
+
+-------------------------------------------------------------------------------------
+
+!não confundir com imei do aparelho, essa chave "Device key" é gerada na primeira vez que
+o aparelho abre o "aplicativo com o push plugin" e envia para os SERVIDORES DO GOOGLE.
+LEMBRA que você cadastrou o "Sender ID" no seu aplicativo, lá na função pushNotification?
+LEMBRA que foi criado automaticamente este "Sender ID" no console developers quando você criou o projeto?
+Pois bem, é isso que o CGM usa para identificar quem envia, por qual app e quem recebe!!!!!
+
+Somente com o "Device key" será possível enviar uma notificação push para os aplicativos com o app instalado.
+
+Então siga os passo abaixo:
+
+1 - você terá de criar uma rotina no seu app para que essas "Device key" seja enviada para o seu BD ou e-mail
+sempre que o app for instalado e ao abrir pela primeira vez. (o usuário não precisa ver esse envio).
+
+2 - Somente com essa base de dados com as chaves "Device key" será possivel enviar tanto mensagens individuais
+para cada aparelho/usuário cadastrado ou enviar uma notificação para todos os usuários da aplicação que estão no
+seu DB!!! Para isso serve a rotina e teste de envio nos arquivos do diretorio /push/ GCMRegId.txt, index.php e registrar.php!
+
+3 - Este aplicativo não usa DB por isso as notificações são enviadas somente para as "Device key" de aplicativos
+que estão salvas no GCMRegId.txt, uma por linha.
+
+
+--------------------------------------------------------------------
+
+
+if (Não quer ajudar) {Não atrapalhe} else {Obrigado pela ajuda!}
+if (Não quer ajudar) {Não atrapalhe} else {Obrigado pela ajuda!}
+if (Não quer ajudar) {Não atrapalhe} else {Obrigado pela ajuda!}
+
+NÃO CRIEI ESTE PLUGIN E CODIGOS PHP, APENAS APRENDI A UTILIZAR, CORRIGI ALGUNS ERROS E COMPARTILHEI!!!
+DENILSON PAIVA - WEB DEVELOPER E APP DEVELOPER!!
+
+--------------------------------------------------------------------
+
+
